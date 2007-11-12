@@ -1,0 +1,36 @@
+:Base  Calcula.HLP>
+:Title Strojírenský kalkulátor
+1 O programu=Oprogramu
+1 Licence=Licence
+1 Kontakty=Kontakty
+1 Ovládání
+2 Výbìr výpoètu=VyberVypoctu
+2 Vstupní øádky=VstupniRadky
+2 Menu vstupních øádek=MenuVstupnichRadek
+2 Vlastnosti vstupních øádek=VlastnostiVstupnichRadek
+2 Výbìrové seznamy=VyberoveSeznamy
+2 Algebraické výrazy=AlgebraickeVyrazy
+1 Vzorce
+2 Hmotnosti
+3 Plech=Plech
+3 Kvádr=Kvadr
+3 Trubka=Trubka
+3 Válec=Valec
+3 Kužel=Kuzel
+3 Komolý kužel=KomolyKuzel
+3 Šestihran=Sestihran
+3 Profily
+4 Profil I=ProfilI
+4 Profil U=ProfilU
+4 Rovnoramenný L=RovnoramennyL
+4 Nerovnoramenný L=NerovnoramennyL
+4 Ètverec=Ctverec
+4 Obdélník=Obdelnik
+3 Souèásti
+4 Šrouby=Srouby
+4 Matice=Matice
+4 Podložky=Podlozky
+2 Pøevody
+3 Kroutící moment=KrouticiMoment
+2 Výpoèty
+3 Prodloužení=Prodlouzeni

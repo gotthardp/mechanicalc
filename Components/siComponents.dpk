@@ -18,7 +18,7 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-    $Id: AnyBnfFile.cpp 22 2007-09-26 17:51:41Z gotthardp $
+    $Id$
 }
 
 package siComponents;

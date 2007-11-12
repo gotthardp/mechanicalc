@@ -1,0 +1,41 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+ERRORLOG=Calcula.log
+LCID=0x405 0x0 0x0 ; Èeština
+REPORT=Yes
+CHARSET=238
+TITLE=Strojírenský kalkulátor
+COPYRIGHT=Copyright © 1997-2007 Petr Gotthard
+HLP=..\Calcula.hlp
+
+[FILES]
+Calcula.rtf
+
+[MAP]
+AlgebraickeVyrazy=2
+Ctverec=16
+KomolyKuzel=31
+KrouticiMoment=51
+Kuzel=32
+Kvadr=33
+Matice=22
+NerovnoramennyL=12
+Obdelnik=15
+Oprogramu=1
+Plech=34
+Podlozky=23
+Prodlouzeni=41
+ProfilI=11
+ProfilU=14
+RovnoramennyL=13
+Sestihran=37
+Srouby=21
+Trubka=35
+Valec=36
+VlastnostiVstupnichRadek=4
+VyberVypoctu=3
+
+[WINDOWS]
+Main="",,27904,,(r12632256),f3
