@@ -16,7 +16,7 @@ object AboutBox: TAboutBox
     Top = 43
     Width = 182
     Height = 13
-    Caption = 'Copyright (c) 1997-2007  Petr Gotthard'
+    Caption = 'Copyright (c) 1997-2009  Petr Gotthard'
     Font.Charset = ANSI_CHARSET
     Font.Color = clBlack
     Font.Height = -11
@@ -35,7 +35,7 @@ object AboutBox: TAboutBox
     Top = 27
     Width = 45
     Height = 13
-    Caption = 'Verze 3.4'
+    Caption = 'Verze 3.5'
     Font.Charset = ANSI_CHARSET
     Font.Color = clBlack
     Font.Height = -11

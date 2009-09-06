@@ -68,13 +68,14 @@ uses
   Graphics, Math;
 
 const {staticke parametry nerovnoramenneho L profilu}
-      PocLnPro=44;
+      PocLnPro=74;
       ProfilLn:array[0..PocLnPro-1] of record
                 prurez:string;
                 hmota:single; {hmotnosti v kg/m}
                 povrch:single; {plocha v m2 na metr}
               end=((prurez:'30.20.3'; hmota:1.12; povrch:0.10),
                    (prurez:'30.20.4'; hmota:1.46; povrch:0.10),
+                   (prurez:'40.20.4'; hmota:1.77; povrch:-0.0),
                    (prurez:'40.25.3'; hmota:1.47; povrch:0.13),
                    (prurez:'40.25.4'; hmota:1.93; povrch:0.13),
                    (prurez:'40.25.5'; hmota:2.37; povrch:0.13),
@@ -82,15 +83,20 @@ const {staticke parametry nerovnoramenneho L profilu}
                    (prurez:'45.30.5'; hmota:2.76; povrch:0.15),
                    (prurez:'50.30.4'; hmota:2.42; povrch:0.16),
                    (prurez:'50.30.5'; hmota:2.97; povrch:0.16),
+                   (prurez:'60.30.5'; hmota:3.36; povrch:-0.0),
                    (prurez:'60.40.5'; hmota:3.76; povrch:0.19),
                    (prurez:'60.40.6'; hmota:4.46; povrch:0.19),
                    (prurez:'60.40.7'; hmota:5.14; povrch:0.19),
+                   (prurez:'65.50.5'; hmota:4.35; povrch:-0.0),
                    (prurez:'70.45.5'; hmota:4.39; povrch:0.22),
                    (prurez:'70.45.6'; hmota:5.21; povrch:0.22),
+                   (prurez:'70.50.6'; hmota:5.41; povrch:-0.0),
                    (prurez:'75.50.5'; hmota:4.75; povrch:0.24),
                    (prurez:'75.50.6'; hmota:5.65; povrch:0.24),
                    (prurez:'75.50.7'; hmota:6.53; povrch:0.24),
                    (prurez:'75.50.8'; hmota:7.39; povrch:0.24),
+                   (prurez:'80.40.6'; hmota:5.41; povrch:-0.0),
+                   (prurez:'80.40.8'; hmota:7.07; povrch:-0.0),
                    (prurez:'80.50.5'; hmota:4.99; povrch:0.25),
                    (prurez:'80.50.6'; hmota:5.92; povrch:0.25),
                    (prurez:'80.50.8'; hmota:7.72; povrch:0.25),
@@ -99,24 +105,48 @@ const {staticke parametry nerovnoramenneho L profilu}
                    (prurez:'80.60.8'; hmota:8.34; povrch:0.27),
                    (prurez:'90.60.6'; hmota:6.84; povrch:0.29),
                    (prurez:'90.60.8'; hmota:8.97; povrch:0.29),
+                   (prurez:'100.50.6'; hmota:6.84; povrch:-0.0),
+                   (prurez:'100.50.8'; hmota:8.97; povrch:-0.0),
                    (prurez:'100.65.7'; hmota:8.77; povrch:0.32),
                    (prurez:'100.65.8'; hmota:9.94; povrch:0.32),
                    (prurez:'100.65.10'; hmota:12.3; povrch:0.32),
                    (prurez:'100.65.12'; hmota:14.5; povrch:0.32),
+                   (prurez:'100.75.8'; hmota:10.6; povrch:-0.0),
+                   (prurez:'100.75.10'; hmota:13.0; povrch:-0.0),
+                   (prurez:'100.75.12'; hmota:15.4; povrch:-0.0),
                    (prurez:'110.70.8'; hmota:10.9; povrch:0.35),
                    (prurez:'110.70.10'; hmota:13.4; povrch:0.35),
                    (prurez:'110.70.12'; hmota:15.9; povrch:0.35),
                    (prurez:'120.80.8'; hmota:12.2; povrch:0.39),
                    (prurez:'120.80.10'; hmota:15.0; povrch:0.39),
                    (prurez:'120.80.12'; hmota:17.8; povrch:0.39),
+                   (prurez:'125.75.8'; hmota:12.2; povrch:-0.0),
+                   (prurez:'125.75.10'; hmota:15.0; povrch:-0.0),
+                   (prurez:'125.75.12'; hmota:17.8; povrch:-0.0),
+                   (prurez:'135.65.8'; hmota:12.2; povrch:-0.0),
+                   (prurez:'135.65.10'; hmota:15.0; povrch:-0.0),
                    (prurez:'140.90.8'; hmota:14.0; povrch:0.45),
                    (prurez:'140.90.10'; hmota:17.4; povrch:0.45),
                    (prurez:'140.90.12'; hmota:20.6; povrch:0.45),
                    (prurez:'140.90.14'; hmota:23.8; povrch:0.45),
+                   (prurez:'150.75.9'; hmota:15.4; povrch:-0.0),
+                   (prurez:'150.75.10'; hmota:17.0; povrch:-0.0),
+                   (prurez:'150.75.12'; hmota:20.2; povrch:-0.0),
+                   (prurez:'150.75.15'; hmota:24.8; povrch:-0.0),
+                   (prurez:'150.90.10'; hmota:18.2; povrch:-0.0),
+                   (prurez:'150.90.12'; hmota:21.6; povrch:-0.0),
+                   (prurez:'150.90.15'; hmota:26.6; povrch:-0.0),
+                   (prurez:'150.100.10'; hmota:19.0; povrch:-0.0),
+                   (prurez:'150.100.12'; hmota:22.5; povrch:-0.0),
                    (prurez:'160.100.10'; hmota:19.7; povrch:0.51),
                    (prurez:'160.100.12'; hmota:23.5; povrch:0.51),
                    (prurez:'160.100.14'; hmota:27.2; povrch:0.51),
-                   (prurez:'160.100.16'; hmota:30.80; povrch:0.51));
+                   (prurez:'160.100.16'; hmota:30.80; povrch:0.51),
+                   (prurez:'200.100.10'; hmota:23.0; povrch:-0.0),
+                   (prurez:'200.100.12'; hmota:27.3; povrch:-0.0),
+                   (prurez:'200.100.15'; hmota:33.75; povrch:-0.0),
+                   (prurez:'200.150.12'; hmota:32.0; povrch:-0.0),
+                   (prurez:'200.150.15'; hmota:39.6; povrch:-0.0));
 
 function RegisterPage(AOwner: TComponent): TVypocty;
 begin
